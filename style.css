@@ -1,0 +1,53 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Arial, san-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+
+    min-height: 100vh;
+
+    background-color: #f0ffff;
+}
+
+
+/* main content */
+
+main .content {
+    padding: 0 1em;
+    width: 100%;
+}
+
+/* sidebar */
+
+main .sidebar {
+    min-width: 200px;
+    max-width: 20%;
+    background-color: #f0f8ff;
+}
+
+.sidebar > * {
+    padding: 0.75em;
+}
+
+.sidebar .sidebar-title {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar > *[draggable='true'] {
+    border: 1px solid #6495ed;
+}
+
+.sidebar h2, .sidebar h3 {
+    margin: 0;
+}

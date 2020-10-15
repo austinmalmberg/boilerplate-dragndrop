@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div id="sidebar" class="sidebar dropzone" data-dragtype="drag-item" data-append-position="between">
+                <div class="sidebar-title">
+                    <h2>Sidebar Title</h2>
+                </div>
+                <div id="item-1" draggable="true" data-dragtype="drag-item">
+                    <h3>Item 1</h3>
+                    <span>Item description</span>
+                </div>
+
+                <div id="item-2" draggable="true" data-dragtype="drag-item">
+                    <h3>Item 2</h3>
+                    <span>Item description</span>
+                </div>
+
+                <div id="item-3" draggable="true" data-dragtype="drag-item">
+                    <h3>Item 3</h3>
+                    <span>Item description</span>
+                </div>
+
+                <div id="item-4" draggable="true" data-dragtype="drag-item">
+                    <h3>Item 4</h3>
+                    <span>Item description</span>
+                </div>
+
+                <div id="item-5" draggable="true" data-dragtype="drag-item">
+                    <h3>Item 5</h3>
+                    <span>Item description</span>
+                </div>
+            </div>
+            <article id="main-article" class="content dropzone" data-dragtype="drag-item"
+                     data-replenish-source=".sidebar *[draggable='true']" data-min-children="1" data-max-children="1"
+                     data-remove-position="end" data-append-position="between">
+                <div id="item-6" draggable="true" data-dragtype="drag-item">
+                    <h3>Item 6</h3>
+                    <span>Item description</span>
+                </div>
+            </article>
+        </main>
+
+        <script src="dragdrop.js"></script>
+    </body>
+</html>
